@@ -1,0 +1,64 @@
+name: NJ MVC Saturday Monitor
+
+on:
+  schedule:
+    # Twice daily, 12 hours apart, in New York time.
+    # Using :17 avoids the busiest start-of-hour period.
+    - cron: "17 8,20 * * *"
+      timezone: "America/New_York"
+
+  workflow_dispatch:
+    inputs:
+      test_email:
+        description: "Send only a test email"
+        required: true
+        default: false
+        type: boolean
+
+permissions:
+  contents: write
+
+concurrency:
+  group: njmvc-saturday-monitor
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.13"
+
+      - name: Test Gmail
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.test_email }}
+        env:
+          GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+        run: python njmvc_monitor_github.py --test-email
+
+      - name: Check NJ MVC
+        if: ${{ github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && !inputs.test_email) }}
+        env:
+          GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+        run: python njmvc_monitor_github.py
+
+      - name: Save alert state
+        if: ${{ github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && !inputs.test_email) }}
+        run: |
+          if git diff --quiet -- njmvc_state.json; then
+            echo "No state change to save."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add njmvc_state.json
+          git commit -m "Update NJ MVC monitor state"
+          git push
