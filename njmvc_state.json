@@ -1,7 +1,63 @@
 {
   "active_by_location": {
-    "Bayonne": [],
-    "Newark": [],
-    "North Bergen": []
+    "Bayonne": [
+      "Bayonne|2026-09-12|1000",
+      "Bayonne|2026-09-12|1015",
+      "Bayonne|2026-09-12|1030",
+      "Bayonne|2026-09-12|1045",
+      "Bayonne|2026-09-12|1100",
+      "Bayonne|2026-09-12|1115",
+      "Bayonne|2026-09-12|1130",
+      "Bayonne|2026-09-12|1145",
+      "Bayonne|2026-09-12|1300",
+      "Bayonne|2026-09-12|1315",
+      "Bayonne|2026-09-12|1330",
+      "Bayonne|2026-09-12|1345",
+      "Bayonne|2026-09-12|830",
+      "Bayonne|2026-09-12|845",
+      "Bayonne|2026-09-12|900",
+      "Bayonne|2026-09-12|915",
+      "Bayonne|2026-09-12|930",
+      "Bayonne|2026-09-12|945"
+    ],
+    "Newark": [
+      "Newark|2026-09-12|1000",
+      "Newark|2026-09-12|1015",
+      "Newark|2026-09-12|1030",
+      "Newark|2026-09-12|1045",
+      "Newark|2026-09-12|1100",
+      "Newark|2026-09-12|1115",
+      "Newark|2026-09-12|1130",
+      "Newark|2026-09-12|1145",
+      "Newark|2026-09-12|1300",
+      "Newark|2026-09-12|1315",
+      "Newark|2026-09-12|1330",
+      "Newark|2026-09-12|1345",
+      "Newark|2026-09-12|830",
+      "Newark|2026-09-12|845",
+      "Newark|2026-09-12|900",
+      "Newark|2026-09-12|915",
+      "Newark|2026-09-12|930",
+      "Newark|2026-09-12|945"
+    ],
+    "North Bergen": [
+      "North Bergen|2026-09-12|1000",
+      "North Bergen|2026-09-12|1015",
+      "North Bergen|2026-09-12|1030",
+      "North Bergen|2026-09-12|1045",
+      "North Bergen|2026-09-12|1100",
+      "North Bergen|2026-09-12|1115",
+      "North Bergen|2026-09-12|1130",
+      "North Bergen|2026-09-12|1145",
+      "North Bergen|2026-09-12|1315",
+      "North Bergen|2026-09-12|1330",
+      "North Bergen|2026-09-12|1345",
+      "North Bergen|2026-09-12|830",
+      "North Bergen|2026-09-12|845",
+      "North Bergen|2026-09-12|900",
+      "North Bergen|2026-09-12|915",
+      "North Bergen|2026-09-12|930",
+      "North Bergen|2026-09-12|945"
+    ]
   }
 }
