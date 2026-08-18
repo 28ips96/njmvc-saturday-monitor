@@ -4,7 +4,7 @@ on:
   schedule:
     # Twice daily, 12 hours apart, in New York time.
     # Using :17 avoids the busiest start-of-hour period.
-    - cron: "17 */3 * * *"
+    - cron: "17 * * * *"
       timezone: "America/New_York"
 
   workflow_dispatch:
