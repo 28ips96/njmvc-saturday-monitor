@@ -1,11 +1,7 @@
 {
   "active_by_location": {
-    "Bayonne": [
-      "Bayonne|2026-09-12|1045"
-    ],
-    "Newark": [
-      "Newark|2026-09-12|845"
-    ],
+    "Bayonne": [],
+    "Newark": [],
     "North Bergen": []
   }
 }
