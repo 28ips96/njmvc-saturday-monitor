@@ -1,7 +1,6 @@
 {
   "active_by_location": {
     "Bayonne": [
-      "Bayonne|2026-09-19|1000",
       "Bayonne|2026-09-19|1015",
       "Bayonne|2026-09-19|1030",
       "Bayonne|2026-09-19|1045",
@@ -28,7 +27,6 @@
       "Newark|2026-09-19|1100",
       "Newark|2026-09-19|1115",
       "Newark|2026-09-19|1130",
-      "Newark|2026-09-19|1145",
       "Newark|2026-09-19|1300",
       "Newark|2026-09-19|1315",
       "Newark|2026-09-19|1330",
@@ -53,7 +51,6 @@
       "North Bergen|2026-09-19|1315",
       "North Bergen|2026-09-19|1330",
       "North Bergen|2026-09-19|1345",
-      "North Bergen|2026-09-19|900",
       "North Bergen|2026-09-19|915",
       "North Bergen|2026-09-19|930",
       "North Bergen|2026-09-19|945"
