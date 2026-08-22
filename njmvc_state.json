@@ -1,8 +1,6 @@
 {
   "active_by_location": {
     "Bayonne": [
-      "Bayonne|2026-08-22|1030",
-      "Bayonne|2026-08-22|830",
       "Bayonne|2026-09-19|1015",
       "Bayonne|2026-09-19|1030",
       "Bayonne|2026-09-19|1045",
@@ -26,8 +24,6 @@
       "Newark|2026-09-19|930",
       "Newark|2026-09-19|945"
     ],
-    "North Bergen": [
-      "North Bergen|2026-09-19|1330"
-    ]
+    "North Bergen": []
   }
 }
